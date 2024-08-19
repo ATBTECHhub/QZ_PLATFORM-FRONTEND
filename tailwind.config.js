@@ -1,8 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        heroBg: "url('../src/assets/hero-Bg.svg')",
+      },
+    },
+    fontFamily: {
+      poppin: "'Poppins', sans-serif",
+      rubik: "'Rubik', serif",
+      inter: "'Inter', sans-serif",
+      Montserrat: "'Montserrat', sans-serif",
+    },
   },
   plugins: [],
 };
